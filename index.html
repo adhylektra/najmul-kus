@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title id="title"></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="voucher()" onclick="putar()">
+<audio src="musik.ogg" id="my_audio" loop="loop"></audio>
+$(if chap-id)
+<form name="sendin" action="$(link-login-only)" method="post">
+  <input type="hidden" name="username" />
+  <input type="hidden" name="password" />
+  <input type="hidden" name="dst" value="$(link-orig)" />
+  <input type="hidden" name="popup" value="true" />
+</form>
+<script type="text/javascript" src="md5.js"></script> 
+<script type="text/javascript">
+            function doLogin() {
+                document.sendin.username.value = document.login.username.value;
+                document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value +
+                    '$(chap-challenge)');
+                document.sendin.submit();
+                return false;
+            }
+        </script>
+<div id="main" class="main">
+  <div class="box"> <img src="https://raw.githubusercontent.com/adhylektra/lebaran/main/UcapanSelamatIdulFitri2.pptx-ezgif.com-video-to-gif-converter%20(2).gif" width="100%" height="auto" style="border-radius: 6px;">
+    <h3 class="brand">Addinul Islami dan Keluarga Mengucapkan </h3>
+  </div>
+  <div class="info">
+    <marquee>
+    <strong>Selamat Hari Raya Idul Fitri 1445 H. Mohon Maaf Lahir dan Batin</strong>
+    </marquee>
+  </div>
+  <div>
+    <h3 class="brand2 info2">تَقَبَّلَ اللَّهُ مِنَّا وَ مِنْكُمْ</h3>
+  </div>
+  <div class="info2"><img src="https://raw.githubusercontent.com/adhylektra/lebaran/main/Adhy%20Lektra.png" width="100%" height="auto" style="border-radius: 6px;"> </div>
+  <div class="box">
+    <button id="btnvrc" class="small-button" onclick="window.location='thr.html';"><i class="icon icon-ticket">&#xe802;</i> Berbagi THR</button>
+    <button id="btnmem" class="small-button" onclick="window.location='status.html';"><i class="icon icon-user-circle-o">&#xf2be;</i> Whatsapp</button>
+  </div>
+  <div>
+    <button id="qr" class="button" onclick="window.location='https://laksa19.github.io/myqr';"> <i class="icon icon-qrcode">&#xe801;</i> Scan QR</button>
+  </div>
+  <br />
+  <div class="table" id="disqus_thread"></div>
+  <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://www-lenterautara-online.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+  <noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+  <style>
+                    .container {
+                      position: relative;
+                      text-align: center;
+                      color: white;
+                    }
+                    .centered {
+                      position: absolute;
+                      top: 25%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      width: 100%;
+                    }
+                </style>
+</div>
+<br />
+<!--<div class="box" style="color:#000;"> <i>Copyright &copy; 2024 Adhy Lektra</i><br />
+  <i>Powered by <a style="color:#000; text-decoration:underline;" href="https://laksa19.github.io">Mikhmon</a></i> 
+  <!-- Tolong jangan dihilangkan bagian ini--> 
+<script type="text/javascript">
+var hostname = window.location.hostname;
+document.getElementById('title').innerHTML = hostname  + " > login";
+
+document.login.username.focus();
+
+var infologin = document.getElementById('infologin');
+infologin.innerHTML = "Masukkan Kode Voucher<br>kemudian klik login.";
+
+// login page 2 mode by Laksamadi Guko
+var username = document.login.username;
+var password = document.login.password;
+
+username.placeholder = "Kode Voucher";
+
+// set password = username
+function setpass() {
+    var user = username.value
+    //user = user.toLowerCase();
+    username.value = user;
+    password.value = user;
+}
+
+username.onkeyup = setpass;
+
+// change to voucher mode
+function voucher() {
+    username.focus();
+    username.onkeyup = setpass;
+    username.placeholder = "Kode Voucher";
+    username.style = "border-radius:3px;"
+    password.type = "hidden";
+    infologin.innerHTML = "Masukkan Kode Voucher<br>kemudian klik login.";
+}
+
+// change to member mode
+function member() {
+    username.focus();
+    username.onkeyup = "";
+    username.placeholder = "Username";
+    username.style = "border-radius:3px 3px 0px 0px;"
+    password.type = "password";
+    infologin.innerHTML = "Masukkan Username dan Password<br>kemudian klik login.";
+}
+
+function putar(){
+    document.getElementById("my_audio").play();
+}
+</script>
+</body>
+<div class="info2">
+  <center>
+Created By | Adhy Lektra
+  </center>
+  <!-- Tolong jangan dihilangkan bagian ini, dibuat oleh Adhy Lektra © 2023 -->
+</div>
+</html>
