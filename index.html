@@ -30,7 +30,7 @@
     </marquee>
   </div>
   <div>
-    <h3 class="brand2 info2">تَقَبَّلَ اللَّهُ مِنَّا وَ مِنْكُمْ</h3>
+    <h4 class="brand2 info2">تَقَبَّلَ اللَّهُ مِنَّا وَ مِنْكُمْ</h4>
   </div>
   <div class="info2"><img src="https://raw.githubusercontent.com/adhylektra/lebaran/main/Adhy%20Lektra.png" width="100%" height="auto" style="border-radius: 6px;"> </div>
   <div class="box"> <a>
@@ -42,27 +42,24 @@
     <button id="qr" class="button icon-qrcode" onclick="window.location='https://laksa19.github.io/myqr';"> Scan QR</button>
   </div>
   <br />
-  <div class="table" id="disqus_thread"></div>
-  <script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://www-lenterautara-online.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
+  <!-----------Batas Atas DISQUS------------->
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'adhylektra-online'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'https://adhylektra-online.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
   <noscript>
-  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"></a>
+  Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
   </noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Adhy Lektra</span></a> 
+  <!-----------Batas bawah DISQUS------------->
   <style>
                     .container {
                       position: relative;
@@ -84,36 +81,24 @@
   <!-- Tolong jangan dihilangkan bagian ini--> 
 <script type="text/javascript">
 var hostname = window.location.hostname;
-document.getElementById('title').innerHTML = hostname  + " > login";
+document.getElementById('title').innerHTML = hostname  + " > Lebaran";
 
 document.login.username.focus();
 
 var infologin = document.getElementById('infologin');
 infologin.innerHTML = "Masukkan Kode Voucher<br>kemudian klik login.";
 
-// login page 2 mode by Laksamadi Guko
-var username = document.login.username;
-var password = document.login.password;
-
-username.placeholder = "Kode Voucher";
-
-// set password = username
-function setpass() {
-    var user = username.value
-    //user = user.toLowerCase();
-    username.value = user;
-    password.value = user;
-}
 
 function putar(){
     document.getElementById("my_audio").play();
 }
-</script>
+</script> 
+<script id="dsq-count-scr" src="//adhylektra-online.disqus.com/count.js" async></script>
 </body>
 <div>
   <center>
     <a href="https://www.facebook.com/adhy.lektra">
-    <button class="info2 icon-facebook-rect-1">Created By | Adhy Lektra</button>
+    <button class="info2 icon-facebook">Created By | Adhy Lektra</button>
     </a>
   </center>
   <!-- Tolong jangan dihilangkan bagian ini, dibuat oleh Adhy Lektra © 2023 -->

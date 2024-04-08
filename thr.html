@@ -66,48 +66,13 @@
   <!-- Tolong jangan dihilangkan bagian ini--> 
 <script type="text/javascript">
 var hostname = window.location.hostname;
-document.getElementById('title').innerHTML = hostname  + " > login";
+document.getElementById('title').innerHTML = hostname  + " > barcode";
 
 document.login.username.focus();
 
 var infologin = document.getElementById('infologin');
 infologin.innerHTML = "Masukkan Kode Voucher<br>kemudian klik login.";
 
-// login page 2 mode by Laksamadi Guko
-var username = document.login.username;
-var password = document.login.password;
-
-username.placeholder = "Kode Voucher";
-
-// set password = username
-function setpass() {
-    var user = username.value
-    //user = user.toLowerCase();
-    username.value = user;
-    password.value = user;
-}
-
-username.onkeyup = setpass;
-
-// change to voucher mode
-function voucher() {
-    username.focus();
-    username.onkeyup = setpass;
-    username.placeholder = "Kode Voucher";
-    username.style = "border-radius:3px;"
-    password.type = "hidden";
-    infologin.innerHTML = "Masukkan Kode Voucher<br>kemudian klik login.";
-}
-
-// change to member mode
-function member() {
-    username.focus();
-    username.onkeyup = "";
-    username.placeholder = "Username";
-    username.style = "border-radius:3px 3px 0px 0px;"
-    password.type = "password";
-    infologin.innerHTML = "Masukkan Username dan Password<br>kemudian klik login.";
-}
 
 function putar(){
     document.getElementById("my_audio").play();
@@ -117,7 +82,7 @@ function putar(){
 <div>
   <center>
     <a href="https://www.facebook.com/adhy.lektra">
-    <button class="info2 icon-facebook-rect-1">Created By | Adhy Lektra</button>
+    <button class="info2 icon-facebook">Created By | Adhy Lektra</button>
     </a>
   </center>
   <!-- Tolong jangan dihilangkan bagian ini, dibuat oleh Adhy Lektra © 2023 -->
