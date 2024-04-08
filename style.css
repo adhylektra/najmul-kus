@@ -6,17 +6,6 @@ body {
   background-size: cover; */
 }
 
-@font-face {
-  font-family: 'fontello';
-  src: url('./font/fontello.eot?78273339');
-  src: url('./font/fontello.eot?78273339#iefix') format('embedded-opentype'),
-       url('./font/fontello.woff?78273339') format('woff'),
-       url('./font/fontello.ttf?78273339') format('truetype'),
-       url('./font/fontello.svg?78273339#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
- 
 .icon
 {
   font-family: "fontello";
@@ -69,15 +58,15 @@ body {
   color:#fff;
   padding:0px;
   margin:10px;
-  font-size:20px;
+  font-size:18px;
   border-bottom: solid 2px #fff;
 }
 
 .brand2{
   color:#fff;
   padding:0px;
-  margin:10px;
-  font-size:30px;
+  margin:8px;
+  font-size:15px;
 }
 
 .username {
@@ -197,9 +186,9 @@ body {
 .info2{
   background-color: #f3f0e3;
   background-image: linear-gradient(#f3f0e3, #f3f0e3, #f3f0e3);
-  border-radius:3px;
+  border-radius:5px;
   padding:5px;
-  margin-bottom:10px;
+  margin-bottom:15px;
   color: #003a64;
 }
 
