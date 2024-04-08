@@ -65,7 +65,7 @@ body {
 .brand2{
   color:#fff;
   padding:0px;
-  margin:5px;
+  margin:3px;
   font-size:23px;
 }
 
@@ -195,7 +195,7 @@ body {
 .arabic{
   background-color: #f3f0e3;
   background-image: linear-gradient(#f3f0e3, #f3f0e3, #f3f0e3);
-  border-radius:20px;
+  border-radius:25px;
   padding:3px;
   margin-bottom:5px;
   color: #003a64;
