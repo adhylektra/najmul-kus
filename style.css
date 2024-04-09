@@ -5,6 +5,85 @@ body {
   /* background-image: url('walls.jpg');
   background-size: cover; */
 }
+.arabic{
+  background-color: #f3f0e3;
+  background-image: linear-gradient(#f3f0e3, #f3f0e3, #f3f0e3);
+  border-radius:25px;
+  padding:3px;
+  margin-bottom:5px;
+  color: #003a64;
+}
+ /* Styling the area of the slides */
+#slideshow {
+    overflow: hidden;
+	border-radius:55px;
+    height: 60px;
+    width: 300px;
+	margin-bottom:10px;
+
+}
+ 
+/* Style each of the sides 
+  with a fixed width and height */
+.slide {
+    float: left;
+    height: 510px;
+    width: 300px;
+}
+ 
+/* Add animation to the slides */
+.slide-wrapper {
+ 
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(300px * 4);
+ 
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 10s ease infinite;
+}
+ 
+/* Set the background color
+  of each of the slides */
+.slide:nth-child(1) {
+    background: MediumSeaGreen;
+}
+ 
+.slide:nth-child(2) {
+    background: SeaGreen;
+}
+ 
+.slide:nth-child(3) {
+    background: MediumSeaGreen;
+}
+ 
+.slide:nth-child(4) {
+    background: SeaGreen;
+}
+ 
+/* Define the animation 
+  for the slideshow */
+@keyframes slide {
+ 
+    /* Calculate the margin-left for 
+    each of the slides */
+    20% {
+        margin-left: 0px;
+    }
+ 
+    40% {
+        margin-left: calc(-300px * 1);
+    }
+ 
+    60% {
+        margin-left: calc(-300px * 2);
+    }
+ 
+    80% {
+        margin-left: calc(-300px * 3);
+    }
+}
+  
 
 .icon
 {
@@ -189,15 +268,6 @@ body {
   border-radius:5px;
   padding:5px;
   margin-bottom:15px;
-  color: #003a64;
-}
-
-.arabic{
-  background-color: #f3f0e3;
-  background-image: linear-gradient(#f3f0e3, #f3f0e3, #f3f0e3);
-  border-radius:25px;
-  padding:3px;
-  margin-bottom:5px;
   color: #003a64;
 }
 
