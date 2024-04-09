@@ -19,14 +19,15 @@ body {
 	border-radius:20px;
     height: 60px;
     width: 300px;
-	margin-bottom:10px;
+	margin-bottom:20px;
 
 }
  
 /* Style each of the sides 
   with a fixed width and height */
 .slide {
-    float: left;
+    float:left;
+	font-size: 20px;
     height: 60px;
     width: 300px;
 }
@@ -46,19 +47,19 @@ body {
 /* Set the background color
   of each of the slides */
 .slide:nth-child(1) {
-    background: SeaGreen;
+    background: #005A42;
 }
  
 .slide:nth-child(2) {
-    background: SeaGreen;
+    background: #005A42;
 }
  
 .slide:nth-child(3) {
-    background: SeaGreen;
+    background: #005A42;
 }
  
 .slide:nth-child(4) {
-    background: SeaGreen;
+    background: #005A42;
 }
  
 /* Define the animation 
