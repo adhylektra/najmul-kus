@@ -27,7 +27,7 @@ body {
   with a fixed width and height */
 .slide {
     float: left;
-	border-radius:20px;
+	border-radius:10px;
     height: 60px;
     width: 300px;
 }
