@@ -16,7 +16,7 @@ body {
  /* Styling the area of the slides */
 #slideshow {
     overflow: hidden;
-	border-radius:55px;
+	border-radius:50px;
     height: 60px;
     width: 300px;
 	margin-bottom:10px;
@@ -27,7 +27,8 @@ body {
   with a fixed width and height */
 .slide {
     float: left;
-    height: 510px;
+	border-radius:50px;
+    height: 60px;
     width: 300px;
 }
  
@@ -40,13 +41,13 @@ body {
  
     /* Specify the animation with the
     duration and speed */
-    animation: slide 10s ease infinite;
+    animation: slide 20s ease infinite;
 }
  
 /* Set the background color
   of each of the slides */
 .slide:nth-child(1) {
-    background: MediumSeaGreen;
+    background: SeaGreen;
 }
  
 .slide:nth-child(2) {
@@ -54,7 +55,7 @@ body {
 }
  
 .slide:nth-child(3) {
-    background: MediumSeaGreen;
+    background: SeaGreen;
 }
  
 .slide:nth-child(4) {
