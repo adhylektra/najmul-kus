@@ -16,7 +16,7 @@ body {
  /* Styling the area of the slides */
 #slideshow {
     overflow: hidden;
-	border-radius:25px;
+	border-radius:20px;
     height: 60px;
     width: 300px;
 	margin-bottom:10px;
@@ -27,7 +27,6 @@ body {
   with a fixed width and height */
 .slide {
     float: left;
-	border-radius:10px;
     height: 60px;
     width: 300px;
 }
@@ -51,7 +50,7 @@ body {
 }
  
 .slide:nth-child(2) {
-    background: MediumSeaGreen;
+    background: SeaGreen;
 }
  
 .slide:nth-child(3) {
@@ -59,7 +58,7 @@ body {
 }
  
 .slide:nth-child(4) {
-    background: MediumSeaGreen;
+    background: SeaGreen;
 }
  
 /* Define the animation 
