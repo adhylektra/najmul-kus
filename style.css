@@ -2,8 +2,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "segoe ui", Verdana, Roboto, "helvetica neue", Arial, sans-serif, "apple color emoji";
   font-size: 14px; 
   margin: 0;
-  /* background-image: url('walls.jpg');
-  background-size: cover; */
+  background-image: url('NK.jpg');
+  background-size: 200px; 
 }
 .arabic{
   background-color: #f3f0e3;
@@ -47,19 +47,19 @@ body {
 /* Set the background color
   of each of the slides */
 .slide:nth-child(1) {
-    background: #005A42;
+    background: #02c5fa;
 }
  
 .slide:nth-child(2) {
-    background: #005A42;
+    background: #02c5fa;
 }
  
 .slide:nth-child(3) {
-    background: #005A42;
+    background: #02c5fa;
 }
  
 .slide:nth-child(4) {
-    background: #005A42;
+    background: #02c5fa;
 }
  
 /* Define the animation 
@@ -106,13 +106,13 @@ body {
 }
 
 .main{
-  background: #005A42;
+  background: #02c5fa;
   color: #fff;
-  max-width: 300px;
+  max-width: 1210px;
   height: 100%;
   border-radius:8px;
   border-style: solid;
-  border-color: #f2f2f2;
+  border-color: #ff0000;
   padding: 10px;
   margin-top: 10%;
   margin-left:auto;
@@ -149,31 +149,6 @@ body {
   font-size:23px;
 }
 
-.username {
-  background-color: #FDFBFB;
-  border: none;
-  border-radius:3px;
-  border-bottom: 1px solid #f2f2f2;
-  text-align:center;
-  font-size: 16px;
-  color: #000000;
-  outline: none;
-  width: 99%;
-  height: 35px;
-}
-
-.password {
-  background-color: #FDFBFB;
-  border: none;
-  border-radius:0px 0px 3px 3px;
-  border-top: 1px solid #f2f2f2;
-  text-align:center;
-  font-size: 16px;
-  color: #000000;
-  outline: none;
-  width: 99%;
-  height: 35px;
-}
 
 .button {
   background-color: #f3f0e3;
