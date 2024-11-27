@@ -11,10 +11,10 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script> 
 <script src="https://cdn.datatables.net/2.0.2/js/dataTables.js"></script>
 </head>
-<body class="dashboard-page">
+<body class="tab2-page">
 <!--Header-->
 <nav class="navbar navbar-expand bg-primary navbar-dark">
-  <div class="container-lg"> <a class="navbar-brand" href="https://github.com/adhylektra"> <img src="img/LOGO.png" width="40"> <strong>NAJMUL-KUS</strong></a>
+  <div class="container-lg"> <a class="navbar-brand" href="https://github.com/adhylektra"> <img src="adhy.png" width="30"> Adhy Lektra</a>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
@@ -48,9 +48,9 @@
             <div class="offcanvas-body">
               <ul class="nav nav-pills flex-column flex-grow-1">
                 <li class="nav-item"> <a class="nav-link link-dark" aria-current="page" href="index.html"><i class="bi bi-house-door"></i> Dashboard</a> </li>
-                <li class="nav-item"> <a class="nav-link link-dark" href="pemenang.html"><i class="bi bi-whatsapp"></i> Pemenang</a> </li>
-                <li class="nav-item"> <a class="nav-link link-dark" href="tanjung.html"><i class="bi bi-wechat"></i> Tanjung</a> </li>
-                <li class="nav-item"> <a class="nav-link link-dark" href="gangga.html"><i class="bi bi-send"></i> Gangga</a> </li>
+                <li class="nav-item"> <a class="nav-link link-dark" href="tab1.html"><i class="bi bi-whatsapp"></i> Menu1</a> </li>
+                <li class="nav-item"> <a class="nav-link link-dark" href="tab2.html"><i class="bi bi-wechat"></i> Menu2</a> </li>
+                <li class="nav-item"> <a class="nav-link link-dark" href="tab3.html"><i class="bi bi-send"></i> Menu3</a> </li>
               </ul>
             </div>
           </div>
@@ -60,71 +60,158 @@
     <!-- End Sidebar Navigasi--> 
     <!--Content-->
     <div class="col-lg-9 mb-5 mt-2">
-      <div class="card">
-        <div class="card-header"> <strong>REAL COUNT </strong></div>
-        <div class="card-body">
-          <h5 class="card-title">&nbsp;</h5>
-          <p class="card-text"></p>
-		  <center><img src="img/NK.jpg" width="30%" alt=""/></center>
-<!-----batas atas---->
-			<div class="container pt-10 align-content-sm-center">	
-		<div class="chart-container" style="position: relative; height:50vh; width:88vw">
-			<canvas class="align-content-md-center" id="myChart"></canvas>
-	</div>
-	</div>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-[<strong>NK:<font color="blue">43.36%</font>] [DZ:<font color="red">31.41%</font>] [MJA:<font color="green">21.26%</font>] [TS:<font color="#57555">2.97%</font></strong>]
-	<br>
-	<br>
-<strong>SELISIH</strong> [<font color="yellow">12.95%</font>]
-	<br>
-<script>
-	const ctx = document.getElementById('myChart');
- 
-	new Chart(ctx, {
-		type: 'pie',
-		data: {
-			labels: ['NK', 'DZ', 'MJA', 'TS'],
-			datasets: [{
-				label: '# Percent',
-				data: [43.36, 31.41, 21.26, 2.97],
-				backgroundColor: [
-					'rgba(84, 225, 254, 2)',
-					'rgba(254, 84, 102, 0.8)',
-					'rgba(20, 146, 58, 0.8)',
-					'rgba(224, 225, 225, 0.8)',
-					],
-				borderColor: [
-					'rgba(249, 254, 255, 2)',
-					'rgba(249, 254, 255, 0.8)',
-					'rgba(249, 254, 255, 0.8)',
-					'rgba(226, 232, 234, 0.8)',
-					],
-				borderWidth: 1
-			}]
-		},
-		options: {
-			scales: {
-				y: {
-					beginAtZero: true
-				}
-			}
-		}
-	});
-</script>
-		<div class="container pt-10">
-				<h6>Suara Masuk: 80,78%</h6>
-			</div>
-<!-----batas bawah--->
-        </div>
-      </div>
+		<font class="align-self-md-center"><strong>REKAPITULASI SUARA BUPATI TINGKAT TPS KEL/DESA BENTEK</strong></font>
+      <table id="example" class="display" style="width:100%">
+        <thead>
+    <tr>
+        <th>TPS</th>
+        <th>DPT</th>
+        <th>DPTb</th>
+        <th>DPK</th>
+        <th>NK</th>
+		<th>DZ</th>
+		<th>MJA</th>
+		<th>TIDAK-SAH</th>
+    </tr>
+			</thead>
+
+    <tr>
+        <td>1</td>
+        <td>241</td>
+        <td>0</td>
+        <td>2</td>
+        <td>104</td>
+        <td>76</td>
+        <td>57</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>528</td>
+        <td>0</td>
+        <td>0</td>
+        <td>200</td>
+        <td>79</td>
+        <td>185</td>
+        <td>11</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>429</td>
+        <td>0</td>
+        <td>0</td>
+        <td>127</td>
+        <td>66</td>
+        <td>229</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>238</td>
+        <td>0</td>
+        <td>4</td>
+        <td>119</td>
+        <td>27</td>
+        <td>88</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>358</td>
+        <td>0</td>
+        <td>1</td>
+        <td>114</td>
+        <td>13</td>
+        <td>180</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>454</td>
+        <td>0</td>
+        <td>2</td>
+        <td>153</td>
+        <td>40</td>
+        <td>247</td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>339</td>
+        <td>0</td>
+        <td>0</td>
+        <td>233</td>
+        <td>24</td>
+        <td>60</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>226</td>
+        <td>0</td>
+        <td>1</td>
+        <td>51</td>
+        <td>22</td>
+        <td>141</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>202</td>
+        <td>0</td>
+        <td>0</td>
+        <td>97</td>
+        <td>74</td>
+        <td>19</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>323</td>
+        <td>1</td>
+        <td>0</td>
+        <td>151</td>
+        <td>70</td>
+        <td>97</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>238</td>
+        <td>1</td>
+        <td>1</td>
+        <td>123</td>
+        <td>28</td>
+        <td>23</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>237</td>
+        <td>1</td>
+        <td>1</td>
+        <td>126</td>
+        <td>55</td>
+        <td>38</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>294</td>
+        <td>1</td>
+        <td>0</td>
+        <td>176</td>
+        <td>47</td>
+        <td>59</td>
+        <td>12</td>
+    </tr>
+        </tfoot>
+      </table>
     </div>
-	  
-	  
     <!--End Content--> 
   </div>
   <!--Foother-->
-  <div class="text-center fixed-bottom py-2" bg-light><i class="bi bi-c-circle"></i> Copyright 2024 ALTRA</div>
+  <div class="text-center fixed-bottom py-2" bg-light>Copyright <i class="bi bi-c-circle"></i> 2024 ALTRA</div>
   <!--End Footer--> 
 </div>
 <!-- Modal -->
@@ -168,6 +255,10 @@
 </div>
 <!-- End Modal --> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+<script>$(document).ready(function(){
+			$('#example').DataTable();
+		});
+	</script> 
 <script>
 		$(document).ready(function(){
 			if($('body').hasClass('dashboard-page')) {
